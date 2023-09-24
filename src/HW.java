@@ -1,96 +1,51 @@
 public class HW {
     public static void main(String[] args) {
-        int number1 = 48;
-        int number2 = 35;
+        // Examples of methods
+        int number1 = 10;
+        int number2 = 5;
+        System.out.println("Absolut difference: " + calculateAbsoluteDifference(number1, number2));
 
-        int absoluteDifference = calculateAbsoluteDifference(number1, number2);
+        String inputString = "Hello, World!";
+        System.out.println("First character: " + getFirstCharacter(inputString));
+        System.out.println("Last character: " + getLastCharacter(inputString));
+        System.out.println("Line after replacement: " + swapFirstAndLastCharacters(inputString));
+    }
 
-        System.out.println("Absolute difference: " + absoluteDifference);
-        String inputString = "Java";
+    // A method for calculating the absolute difference between two numbers
+    public static int calculateAbsoluteDifference(int a, int b) {
+        return Math.abs(a - b);
+    }
 
-
-       public char firstChar = getFirstCharacter(inputString);
-
-        System.out.println("First character: " + firstChar);
-
-       public char getFirstCharacter (String input){
-            // Check that the string is not empty and has at least one character
-            if (input != null && !input.isEmpty()) {
-                // Returning the first character of the string
-                return input.charAt(0);
-            }
-            else {
-                // If the string is empty or null, we return the default character (for example, '!')
-                return '!';
-
-                String inputString = "Java";
-
-                public char lastChar = getLastCharacter(inputString);
-
-                System.out.println("Last character: " + lastChar);
-
-
-               public char getLastCharacter (String input){
-                    // Check that the string is not empty and has at least one character
-                    if (input != null && !input.isEmpty()) {
-                        // Returning the last character of the string
-                        return input.charAt(input.length() - 1);
-                    } else {
-                        // If the string is empty or null, we return the default character (for example, '!')
-                        return '!';
-                    }
-                }
-
-                String inputString = "Java";
-
-                String swappedString = swapFirstAndLastCharacters(inputString);
-
-                System.out.println("Line after replacement: " + swappedString);
-
-                String swapFirstAndLastCharacters (String input){
-                    // Check that the string is not empty and has at least two characters
-                    if (input != null && input.length() >= 2) {
-                        // We get the first and last characters of the string
-                        char firstChar = input.charAt(0);
-                        char lastChar = input.charAt(input.length() - 1);
-
-                        // Creating a new line by swapping the first and last characters
-                        String swappedString = lastChar + input.substring(1, input.length() - 1) + firstChar;
-
-                        return swappedString;
-                    } else {
-                        // If the string is empty, null, or has less than two characters, we return the original string
-                        return input;
-                    }
-
-                }
-            }
-
-            public static int calculateAbsoluteDifference ( int a, int b){
-
-                // Using a Math.abs() method to calculate absolute difference
-                return Math.abs(a - b);
-            }
-
-
+    // Method for getting the first character from a string
+    public static char getFirstCharacter(String input) {
+        if (input != null && !input.isEmpty()) {
+            return input.charAt(0);
+        } else {
+            return '!';
         }
     }
 
+    // Method for getting the last character from a string
+    public static char getLastCharacter(String input) {
+        if (input != null && !input.isEmpty()) {
+            return input.charAt(input.length() - 1);
+        } else {
+            return '!';
+        }
+    }
+
+    // Method for replacing the first and last characters in a string
+    public static String swapFirstAndLastCharacters(String input) {
+        if (input != null && input.length() >= 2) {
+            char firstChar = input.charAt(0);
+            char lastChar = input.charAt(input.length() - 1);
+            String middle = input.substring(1, input.length() - 1);
+            return lastChar + middle + firstChar;
+        } else {
+            return input;
+        }
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
