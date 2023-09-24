@@ -1,4 +1,4 @@
-public class Homework {
+public class Homework2 {
     public static void main(String[] args) {
         int number1 = 48;
         int number2 = 35;
@@ -17,25 +17,25 @@ public class Homework {
 }
 
 class SecondTask {
-        public static void main(String[] args) {
-            String inputString = "Java";
+    public static void main(String[] args) {
+        String inputString = "Java";
 
-            char firstChar = getFirstCharacter(inputString);
+        char firstChar = getFirstCharacter(inputString);
 
-            System.out.println("First character: " + firstChar);
-        }
+        System.out.println("First character: " + firstChar);
+    }
 
-        public static char getFirstCharacter(String input) {
-            // Check that the string is not empty and has at least one character
-            if (input != null && !input.isEmpty()) {
-                // Returning the first character of the string
-                return input.charAt(0);
-            } else {
-                // If the string is empty or null, we return the default character (for example, '!')
-                return '!';
-            }
+    public static char getFirstCharacter(String input) {
+        // Check that the string is not empty and has at least one character
+        if (input != null && !input.isEmpty()) {
+            // Returning the first character of the string
+            return input.charAt(0);
+        } else {
+            // If the string is empty or null, we return the default character (for example, '!')
+            return '!';
         }
     }
+}
 
 class ThirdTask{
     public static void main(String[] args) {
