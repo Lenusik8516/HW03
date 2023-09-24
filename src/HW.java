@@ -1,15 +1,4 @@
 public class HW {
-    public static void main(String[] args) {
-        // Examples of methods
-        int number1 = 10;
-        int number2 = 5;
-        System.out.println("Absolut difference: " + calculateAbsoluteDifference(number1, number2));
-
-        String inputString = "Hello, World!";
-        System.out.println("First character: " + getFirstCharacter(inputString));
-        System.out.println("Last character: " + getLastCharacter(inputString));
-        System.out.println("Line after replacement: " + swapFirstAndLastCharacters(inputString));
-    }
 
     // A method for calculating the absolute difference between two numbers
     public static int calculateAbsoluteDifference(int a, int b) {
@@ -17,7 +6,7 @@ public class HW {
     }
 
     // Method for getting the first character from a string
-    public char getFirstCharacter(String input) {
+    homework.getFirstCharacter(inputString) {
         if (input != null && !input.isEmpty()) {
             return input.charAt(0);
         } else {
@@ -26,7 +15,7 @@ public class HW {
     }
 
     // Method for getting the last character from a string
-    public char getLastCharacter(String input) {
+    homework.getLastCharacter(inputString) {
         if (input != null && !input.isEmpty()) {
             return input.charAt(input.length() - 1);
         } else {
@@ -45,8 +34,20 @@ public class HW {
             return input;
         }
     }
+    public static void main(String[] args) {
+        // Examples of methods
+        HW homework = new HW();
+        int number1 = 10;
+        int number2 = 5;
+        System.out.println("Absolut difference: " + calculateAbsoluteDifference(number1, number2));
+
+        String inputString = "Hello, World!";
+        System.out.println("First character: " + getFirstCharacter(inputString));
+        System.out.println("Last character: " + getLastCharacter(inputString));
+        System.out.println("Line after replacement: " + swapFirstAndLastCharacters(inputString));
+
+
+    }
+
+
 }
-
-
-
-
