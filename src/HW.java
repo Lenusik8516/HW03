@@ -6,7 +6,7 @@ public class HW {
     }
 
     // Method for getting the first character from a string
-    homework.getFirstCharacter(inputString) {
+    public char getFirstCharacter(String input) {
         if (input != null && !input.isEmpty()) {
             return input.charAt(0);
         } else {
@@ -15,7 +15,7 @@ public class HW {
     }
 
     // Method for getting the last character from a string
-    homework.getLastCharacter(inputString) {
+    public char getLastCharacter(String input) {
         if (input != null && !input.isEmpty()) {
             return input.charAt(input.length() - 1);
         } else {
@@ -41,10 +41,10 @@ public class HW {
         int number2 = 5;
         System.out.println("Absolut difference: " + calculateAbsoluteDifference(number1, number2));
 
-        String inputString = "Hello, World!";
-        System.out.println("First character: " + getFirstCharacter(inputString));
-        System.out.println("Last character: " + getLastCharacter(inputString));
-        System.out.println("Line after replacement: " + swapFirstAndLastCharacters(inputString));
+        String inputString = "Helsinki";
+        System.out.println("First character: " + homework.getFirstCharacter(inputString));
+        System.out.println("Last character: " + homework.getLastCharacter(inputString));
+        System.out.println("Line after replacement: " + homework.swapFirstAndLastCharacters(inputString));
 
 
     }
