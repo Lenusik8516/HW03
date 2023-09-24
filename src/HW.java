@@ -17,7 +17,7 @@ public class HW {
     }
 
     // Method for getting the first character from a string
-    public static char getFirstCharacter(String input) {
+    public char getFirstCharacter(String input) {
         if (input != null && !input.isEmpty()) {
             return input.charAt(0);
         } else {
@@ -26,7 +26,7 @@ public class HW {
     }
 
     // Method for getting the last character from a string
-    public static char getLastCharacter(String input) {
+    public char getLastCharacter(String input) {
         if (input != null && !input.isEmpty()) {
             return input.charAt(input.length() - 1);
         } else {
@@ -35,7 +35,7 @@ public class HW {
     }
 
     // Method for replacing the first and last characters in a string
-    public static String swapFirstAndLastCharacters(String input) {
+    public String swapFirstAndLastCharacters(String input) {
         if (input != null && input.length() >= 2) {
             char firstChar = input.charAt(0);
             char lastChar = input.charAt(input.length() - 1);
