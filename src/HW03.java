@@ -1,4 +1,4 @@
-public class Homework4 {
+public class HW03 {
     public static void main(String[] args) {
         int number1 = 48;
         int number2 = 35;
