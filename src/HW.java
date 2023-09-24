@@ -23,7 +23,7 @@ public class HW {
         System.out.println("First character: " + firstChar);
     }
 
-    public static char getFirstCharacter(String input) {
+     char getFirstCharacter(String input) {
         // Check that the string is not empty and has at least one character
         if (input != null && !input.isEmpty()) {
             // Returning the first character of the string
@@ -42,7 +42,7 @@ public class HW {
             System.out.println("Last character: " + lastChar);
         }
 
-        public static char getLastCharacter (String input){
+         char getLastCharacter (String input){
             // Check that the string is not empty and has at least one character
             if (input != null && !input.isEmpty()) {
                 // Returning the last character of the string
@@ -62,7 +62,7 @@ public class HW {
             System.out.println("Line after replacement: " + swappedString);
         }
 
-        public static String swapFirstAndLastCharacters (String input){
+         String swapFirstAndLastCharacters (String input){
             // Check that the string is not empty and has at least two characters
             if (input != null && input.length() >= 2) {
                 // We get the first and last characters of the string
