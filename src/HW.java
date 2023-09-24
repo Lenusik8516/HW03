@@ -9,27 +9,28 @@ public class HW {
         String inputString = "Java";
 
 
-        char firstChar = getFirstCharacter(inputString);
+       public char firstChar = getFirstCharacter(inputString);
 
         System.out.println("First character: " + firstChar);
 
-        char getFirstCharacter (String input){
+       public char getFirstCharacter (String input){
             // Check that the string is not empty and has at least one character
             if (input != null && !input.isEmpty()) {
                 // Returning the first character of the string
                 return input.charAt(0);
-            } else {
+            }
+            else {
                 // If the string is empty or null, we return the default character (for example, '!')
                 return '!';
 
                 String inputString = "Java";
 
-                char lastChar = getLastCharacter(inputString);
+                public char lastChar = getLastCharacter(inputString);
 
                 System.out.println("Last character: " + lastChar);
 
 
-                char getLastCharacter (String input){
+               public char getLastCharacter (String input){
                     // Check that the string is not empty and has at least one character
                     if (input != null && !input.isEmpty()) {
                         // Returning the last character of the string
